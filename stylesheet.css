@@ -1,3 +1,16 @@
 body{
     background-color: azure;
 }
+
+h1, h3{
+  
+  font-family: "Kalnia", serif;
+}
+
+p{
+  font-family: "Truculenta", sans-serif;
+}
+
+hr{
+    background-color:cornflowerblue;
+}
