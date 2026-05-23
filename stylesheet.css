@@ -4,16 +4,18 @@
 
 body{
   background-color: rgb(214, 236, 255);
-  margin: 10%;
-  margin-top: 1%;
-
+  margin: auto;
+  max-width:90%;
+  padding: 10px;
 }
 
 h1{
   font-family: "DM Sans", sans-serif;
   background-color: rgb(111, 146, 212);
+  text-align: center;
   padding: 0;
   width: 50%;
+
   height: 50%;
   margin: auto;
   display: flex;
@@ -36,6 +38,7 @@ h3{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+   text-align: center;
 }
 
 p{
@@ -43,6 +46,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 iframe{
@@ -75,45 +79,76 @@ video{
   align-items: center;
 }
 
-button{
-  width:400px;
-  height: 500px;
-
-}
-
 span{
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  margin:0;
 
-ul{
-  list-style: none;
 }
-
+.gallery{
+  display:flex;
+  align-items:center;
+  justify-items: center;
+  position: relative;
+  transform: translate(50%, 0);
+}
 img{
-  width:50%;
-  padding: 5px;
-  background-color:aqua;
-  display: flex;
-  justify-items:center;
-  align-items: center;
-  border-radius: 10px;
+
+  border-radius: 20px;
+  padding: 10px;
 }
-.column{
+.gallery{
+  display: inline-block;
+  border: 1px solid grey;
+  margin: 8px;
+  width: 200px;
+  padding:5px;  
+  height: 300px;
+
+  border: 1px solid black;
+  margin-bottom: 25px;
+  border-radius:10px;
+  background-color:rgb(159, 143, 249);
+  
+}
+
+.gallery .description{
+  position: relative;
+  
+  text-align: center;
+}
+
+.gallery:hover{
+  border: 1px solid grey;
+}
+
+.gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
   float: left;
-  width:44.44%;
-  padding: 5px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
  
 }
 
-.row{
-  content:"";
-  display: table;
-  clear:  both;
+ul li a:hover {
+  background-color: #111111;
 }
-  
-
