@@ -6,6 +6,7 @@ body{
   background-color: rgb(214, 236, 255);
   margin: 10%;
   margin-top: 1%;
+
 }
 
 h1{
@@ -94,8 +95,25 @@ ul{
 }
 
 img{
-  width: 190px;
-  height: 200px;
+  width:50%;
+  padding: 5px;
+  background-color:aqua;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  border-radius: 10px;
+}
+.column{
+  float: left;
+  width:44.44%;
+  padding: 5px;
+ 
+}
+
+.row{
+  content:"";
+  display: table;
+  clear:  both;
+}
   
 
-}
