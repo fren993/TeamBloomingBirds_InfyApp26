@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -12,10 +13,12 @@ Light light B:#bbe7f6
 body{
   background-color: #bbe7f6;
   text-align: center;
+  max-width:100%;
+  margin: auto;
 }
 .wrapper{
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
 }
 header{
   opacity: 0.9;
@@ -134,8 +137,8 @@ h3{
 }
 .why{
   font-size: 18px;
-  max-width: 950px;
-  max-height: 200px;
+  max-width: 80%;
+  max-height: 400px;
 
   padding:15px;
   margin-bottom:20px;
@@ -254,3 +257,10 @@ ul li a:hover {
   background-color: #59789a;
 }
 
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #ffffff;
+  background-color: #66a9dd;
+
+}
