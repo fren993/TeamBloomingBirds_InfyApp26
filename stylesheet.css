@@ -1,21 +1,99 @@
 * {
-  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
 }
-
+/*
+Darkest blue; #66a9dd
+Medium blue: #9cc5f0
+Lightest blue: #bbe7f6
+light pink: #fedef2
+Light light B:#bbe7f6
+*/
 body{
-  background-color: rgb(214, 236, 255);
-  margin: auto;
-  max-width:90%;
-  padding: 10px;
+  background-color: #bbe7f6;
+  text-align: center;
 }
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+header{
+  opacity: 0.9;
+  height: 70px;
+  background: #66a9dd;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+.logo{
+  width:30%;
+  float:left;
+  line-height:70px;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "DM sans", sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+nav{
+  float:right;
+  line-height:70px;
+}
+nav a{
+  text-decoration: none;
+  font-family:"DM sans", sans-serif;
+  font-size: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+ul{
+  list-style: none;
+}
+.banner-area{
+  margin: 0;
+  padding:0;
+  margin-top:0;
+  width:100%;
+  height: 600px;
+  position: relative;
+  top: 70px;
+  background-image: url(Banner.jpg);
 
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.content-area{
+  width:100%;
+  position: relative;
+  top:150px;
+  
+  height:1500px;
+}
+hr{
+ border-top: 1px solid #1c364a;
+}
+.content-area h2{
+  font-family:"DM sans", sans-serif;
+  letter-spacing: 4px;
+  padding-top:10px;
+  font-size: 40px;
+  margin: 0;
+}
+.content-area p{
+  padding: 2% 0;
+  font-family: "Truculenta", sans-serif;
+  line-height: 30px;
+
+}
 h1{
   font-family: "DM Sans", sans-serif;
-  background-color: rgb(111, 146, 212);
+  background-color: #9cc5f0;
   text-align: center;
   padding: 0;
   width: 50%;
-
   height: 50%;
   margin: auto;
   display: flex;
@@ -27,7 +105,7 @@ h1{
 
 h3{
   font-family: "DM Sans", sans-serif;
-  background-color: rgb(111, 146, 212);
+  background-color: #9cc5f0;
   padding: 0;
   width: 30%;
   height: 50%;
@@ -38,21 +116,51 @@ h3{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-   text-align: center;
-}
-
-p{
-  font-family: "Truculenta", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
+.pitch, .theme, .why{
+  font-size: 18px;
+  max-width: 950px;
+  max-height: 150px;
 
+  padding:15px;
+  margin-bottom:20px;
+
+  font-family: "Truculenta", sans-serif;
+  margin:auto;
+  margin-bottom:20px;
+  background-color: #9cc5f0;
+  border-radius:10px;
+}
+.why{
+  font-size: 18px;
+  max-width: 950px;
+  max-height: 200px;
+
+  padding:15px;
+  margin-bottom:20px;
+
+  font-family: "Truculenta", sans-serif;
+  margin:auto;
+  margin-bottom:20px;
+  background-color: #9cc5f0;
+  border-radius:10px;
+}
+
+/*p, h3{
+
+
+  background-color: #9cc5f0;
+  border-radius:10px;
+}*/
+
+br, hr{
+  margin:20px;
+}
 iframe{
   padding: 10px;
-  background-color: rgb(122, 165, 212);
-  width: 100%;
+  background-color: #9cc5f0;
+  width: 95%;
   height: 500px;
 
   border-radius: 10px;
@@ -67,10 +175,9 @@ iframe{
 
 video{
   padding: 10px;
-  background-color: rgb(106, 195, 255);
-  width: 80%;
+  background-color: #9cc5f0;
+  width: 95%;
   height: 500px;
- 
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -84,40 +191,37 @@ span{
   margin:0;
 
 }
-.gallery{
-  display:flex;
-  align-items:center;
-  justify-items: center;
-  position: relative;
-  transform: translate(55%, 0);
-}
+
 img{
 
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 0;
 }
 .gallery{
   display: inline-block;
-  border: 1px solid grey;
-  margin: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
   width: 200px;
-  padding:5px;  
+  padding:10px;  
+  padding-bottom: 80px;
   height: 300px;
+
 
   border: 1px solid black;
   margin-bottom: 25px;
   border-radius:10px;
-  background-color:rgb(159, 143, 249);
+  background-color:#66a9dd;
 }
 
 .gallery .description{
   position: relative;
-  
+  color: white;
   text-align: center;
+  font-family: "Truculenta", sans-serif;
 }
 
 .gallery:hover{
-  border: 1px solid grey;
+  border: 1px solid #fedef2;
 }
 
 .gallery img{
@@ -131,29 +235,22 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  display: flex;
+  position: relative;
 }
 
 ul li {
-  float: left;
+  float: right;
 }
 
 ul li a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  font-family: "Truculenta", sans-serif;
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #59789a;
 }
 
-.banner-are{
-  width:100%;
-  height: 500px;
-  position: fixed;
-  top: 100px;
-  back
-}
